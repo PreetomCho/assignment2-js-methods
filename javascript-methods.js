@@ -91,7 +91,13 @@ Array.prototype.myLastIndexOf = function(searchElement) {
 
 // KEYS //
 Object.myKeys = function(object) {
-  // Place your code here.
+  let x = [];
+  for(let prop in object) {
+    if(object.hasOwnProperty(prop))
+      x.push(prop);
+  }
+
+  return x;
 };
 
 // VALUES //
